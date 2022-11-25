@@ -4,7 +4,7 @@ After=network.target
  
 [Service]
 Type=forking
-ExecStart=/ust/local/bin/rinetd -c /etc/rinetd/rinetd.conf
+ExecStart=/usr/local/bin/rinetd -c /etc/rinetd/rinetd.conf
  
 [Install]
 WantedBy=multi-user.target
