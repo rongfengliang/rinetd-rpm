@@ -1,0 +1,11 @@
+[Unit]
+Description=rinetd
+After=network.target
+ 
+[Service]
+Type=forking
+ExecStart=/ust/local/bin/rinetd -c /etc/rinetd/rinetd.conf
+ 
+[Install]
+WantedBy=multi-user.target
+ 
